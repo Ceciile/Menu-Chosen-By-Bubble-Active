@@ -1,0 +1,126 @@
+
+.menu-wrap {
+	width:100%;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+	background:#3e3436;
+}
+#primary_nav_wrap
+{
+margin-top:15px;
+width:1000px;
+margin:0px auto;
+}
+
+#primary_nav_wrap ul
+{
+list-style:none;
+position:absolute;
+left: 150px;
+top: 20px;
+margin:0;
+padding:0;
+
+}
+.clearfix:after {
+	display:block;/*affiche*/
+	clear:both;
+}
+
+#primary_nav_wrap ul a
+{
+display:block;
+text-decoration:none;
+font-size:12px;
+width:70px;
+line-height:30px;
+padding:0 15px;
+
+font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+transition:all linear 0.15s;
+	color:#919191;
+}
+
+#main , #deep , #subdeep , #menu1, #menu4 , #menu8
+{
+color: black !important;
+background: #DDA0DD;
+margin:0px;
+	list-style:none;
+	font-family:'Ek Mukta';
+}
+
+#main:hover, #deep:hover, #subdeep:hover, #menu1:hover , #menu4:hover ,#menu8:hover, #undo:hover, #repeat:hover, #clear:hover,#select:hover
+{
+  background:#9400D3 !important;
+  
+}
+#primary_nav_wrap ul li
+{
+float:left;
+	display:inline-block;
+	position:relative;
+	font-size:19px;
+padding:10px 40px;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+#primary_nav_wrap ul li:hover
+{
+background:#2e2728;
+  transition:all linear 0.15s;
+	color:#919191;
+}
+
+#primary_nav_wrap ul ul
+{
+display:none;
+  width:160%;
+	padding:5px 0px;
+position:absolute;
+top:100%;
+left:0;
+background:#2e2728;
+padding:0;
+  z-index:-1;
+  transition:opacity linear 0.15s;
+  box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+}
+
+#primary_nav_wrap ul ul li
+{
+float:none;
+width:102px
+}
+
+#primary_nav_wrap ul ul a
+{
+line-height:100%;
+padding:10px 30px;
+	display:block;
+}
+
+#primary_nav_wrap ul ul ul
+{
+top:0;
+left:100%
+}
+
+
+
+#primary_nav_wrap ul li:hover > ul
+{
+display:block !important;
+position:absolute;;
+/*top:200px;
+left:200px;*/
+
+}
+#circleBase {
+    position: absolute;
+    visibility: hidden;
+    border-radius: 50%;
+    /*width: 500px;
+    height: 500px;*/
+    background:rgba(221,160,221,0.4);
+    border: 3px solid #DDA0DD;
+}

@@ -220,10 +220,10 @@ function handleMouseUp(event) {
     originY = 20;
 
 
-    undo.style.background = "white";
-    repeat.style.background = "white";
-    clear.style.background = "white";
-    select.style.background = "white";
+    //undo.style.background = "white";
+    //repeat.style.background = "white";
+    //clear.style.background = "white";
+    //select.style.background = "white";
 
 
     circle.style.visibility = "hidden";
@@ -531,10 +531,10 @@ function handleMouseMove(event) {
         if (!isActiveSubDeep41) {
             deepMenu4.children[4].children[0].style.background = "#DDA0DD";
         }
-        undo.style.background = "white";
-        repeat.style.background = "white";
-        clear.style.background = "white";
-        select.style.background = "white";
+        //undo.style.background = "white";
+        //repeat.style.background = "white";
+        //clear.style.background = "white";
+        //select.style.background = "white";
 
     }
     if (isMouseDown == true && (modeFix == true || isActiveFloatMenu == true) && isShowedMenu4 && isBubble && !isNormal) {
@@ -981,7 +981,7 @@ function getMenuCapturedByBubbleCursor(event) {
     }
     if (isShowedMenu4) {
         if (isActiveFloatMenu == true) {
-            originX = pointFloat[0] - 3 * menu_width;
+            originX = pointFloat[0]; //float close to mouse
             originY = pointFloat[1] - menu_height;
             modeFix = true;
             modeMove = false;
@@ -1048,7 +1048,7 @@ function getMenuCapturedByBubbleCursor(event) {
     }
     if (isShowedMenu8) {
         if (isActiveFloatMenu == true) {
-            originX = pointFloat[0] - 7 * menu_width;
+            originX = pointFloat[0] - 10 * menu_width;
             originY = pointFloat[1] - menu_height;
             modeFix = true;
             modeMove = false;
